@@ -21,12 +21,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run trivy
-        uses: aquasecurity/trivy-action@master
+      - uses: aquasecurity/trivy-action@master
         with:
           scan-type: fs
           scan-ref: .
           exit-code: 1
-          severity: HIGH,CRITICAl
+          severity: HIGH,CRITICAL
   dependency-review:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
