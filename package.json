@@ -1,0 +1,25 @@
+{
+  "name": "ci-demo",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "4.17.15",
+    "gpl-3.0": "1.0.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsuho/ci-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vsuho/ci-demo/issues"
+  },
+  "homepage": "https://github.com/vsuho/ci-demo#readme"
+}
