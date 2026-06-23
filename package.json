@@ -2,8 +2,6 @@
   "name": "ci-demo",
   "version": "1.0.0",
   "dependencies": {
-    "lodash": "4.17.15",
-    "gpl-3.0": "1.0.1"
   },
   "description": "",
   "main": "index.js",
