@@ -43,9 +43,9 @@ jobs:
     steps: 
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: npm audit
-        run:  npm audit --audit-level=HIGH
+        run:  npm audit --audit-level=high
       - name: OSV scanner
-        uses: google/osv-scanner-action/@9a498708959aeaef5ef730655706c5a1df1edbc2 # v2.3.8
+        uses: google/osv-scanner-action/osv-scanner-action@9a498708959aeaef5ef730655706c5a1df1edbc2 # v2.3.8
         with: 
           scan-args: |-
             --recursive
@@ -67,7 +67,7 @@ jobs:
     steps: 
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: Generate SBOM
-        uses: anchore/sbom-action/@22c389904149dbc22b58101806040fa8d37a610  # v0.24.0
+        uses: anchore/sbom-action/@e22c389904149dbc22b58101806040fa8d37a610  # v0.24.0
         with: 
           artifact-name: sbom.spdx.json
           upload-artifact: true
